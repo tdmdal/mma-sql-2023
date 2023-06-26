@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+  render: 
+    - "*.qmd"
+  resources:
+    - "*.ipynb"
+
+website:
+  title: "MMA SQL Workshop (2023)"
+  search: false
+  navbar:
+    right:
+      - text: Home
+        icon: house-fill
+        file: index.qmd
+
+format:
+  html:
+    theme: 
+      - united
+      - custom.scss
+    toc: true
+    fontsize: 95%
+
+editor: visual
