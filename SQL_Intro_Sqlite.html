@@ -13995,9 +13995,11 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># install JupySQL so we can run SQL in Jupyter/IPython notebook via %sql and %%sql magics</span>
-<span class="c1"># https://jupysql.ploomber.io/en/latest/quick-start.html</span>
-<span class="o">!</span>pip install jupysql --quiet
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># install ipython-sql 0.5.0</span>
+<span class="c1"># this Python package allows us to run SQL in Jupyter/IPython notebook via %sql and %%sql magics</span>
+<span class="c1"># the ipython-sql already installed on Google Colab isn&#39;t up-to-date to work with the SQLAlchemy installed</span>
+<span class="c1"># https://github.com/catherinedevlin/ipython-sql</span>
+<span class="o">!</span>pip install ipython-sql<span class="o">==</span><span class="m">0</span>.5.0 --quiet
 </pre></div>
 
      </div>
@@ -14011,12 +14013,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load and configure the SQL magic extension</span>
-<span class="c1"># https://jupysql.ploomber.io/en/latest/api/configuration.html</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load the SQL magic extension</span>
 <span class="o">%</span><span class="k">load_ext</span> sql
-
-<span class="o">%</span><span class="k">config</span> SqlMagic.displaycon = False
-<span class="o">%</span><span class="k">config</span> SqlMagic.displaylimit = None
 </pre></div>
 
      </div>
