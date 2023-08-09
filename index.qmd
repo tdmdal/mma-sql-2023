@@ -18,7 +18,7 @@ title: "SQL Workshop"
 
 ### Slides
 
--   Intro to SQL (*coming soon*)
+-   Intro to SQL ([sql_bootcamp.pdf](sql_bootcamp.pdf))
 
 ### Notebook
 
