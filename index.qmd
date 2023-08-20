@@ -24,6 +24,8 @@ title: "SQL Workshop"
 
 -   SQL Intro Notebook [![](colab-badge.svg)](https://colab.research.google.com/github/tdmdal/mma-sql-2023/blob/master/docs/SQL_Intro_Sqlite.ipynb)
 
+- The full Notebook (all questions solved) in HTML format has been posted on Quercus. It’s not in notebook format so you cannot simply load it to Google Colab and hit run all. Use it as a reference and build your SQL Bootcamp Notebook on your own.
+
 ### Backup Setup
 
 If you don't have access to Google service, below is a backup setup for the workshop.
